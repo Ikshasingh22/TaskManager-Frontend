@@ -52,7 +52,6 @@ const TaskView = () => {
         }
       );
       if(response.data.success===true){
-      // Assuming the server responds with the updated task data
       setTask(response.data.updatedTask);
       setEditMode(false);
 
