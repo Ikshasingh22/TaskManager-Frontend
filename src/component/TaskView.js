@@ -20,7 +20,7 @@ const TaskView = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/user/task/taskdetails/${taskId}`, {
+        const response = await axios.get(`https://taskmanagerbackend-py44.onrender.com/user/task/taskdetails/${taskId}`, {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
@@ -39,7 +39,7 @@ const TaskView = () => {
   const handleUpdate = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/user/task/updatetask/${taskId}`,
+        `https://taskmanagerbackend-py44.onrender.com/user/task/updatetask/${taskId}`,
         {
           taskName: editedTaskName,
           taskDescription: editedTaskDescription,

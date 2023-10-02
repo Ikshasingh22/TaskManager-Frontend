@@ -23,7 +23,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/user/signup', user);
+      const response = await axios.post('https://taskmanagerbackend-py44.onrender.com/user/signup', user);
       if (response.data.success === true) {
         console.log('Data sent successfully:', response.data);
         setUser({

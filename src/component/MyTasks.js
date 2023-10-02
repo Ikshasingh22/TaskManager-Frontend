@@ -17,7 +17,7 @@ const MyTasks=()=>{
     };
     const fetchTasks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/user/task/alltasks", {
+        const response = await axios.get("https://taskmanagerbackend-py44.onrender.com/user/task/alltasks", {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
@@ -36,7 +36,7 @@ const MyTasks=()=>{
     const handleDeleteTask = async (taskId) => {
       try {
         const taskIdToDelete = taskId;
-        const response = await axios.delete(`http://localhost:5000/user/task/deletetask/${taskIdToDelete}`, {
+        const response = await axios.delete(`https://taskmanagerbackend-py44.onrender.com/user/task/deletetask/${taskIdToDelete}`, {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
