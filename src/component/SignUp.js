@@ -10,7 +10,7 @@ const SignUp = () => {
       password: "",
     }
   );
-  const [message, setMessage] = useState(""); // Use setMessage to update message
+  const [message, setMessage] = useState("");
 
   const handleInputs = (e) => {
     const { name, value } = e.target;
@@ -31,7 +31,7 @@ const SignUp = () => {
           email: "",
           password: "",
         });
-        // Use setMessage to update message
+        
         setMessage(response.data.message);
       }
       else if (response.data.success === false) {
@@ -40,7 +40,7 @@ const SignUp = () => {
           email: "",
           password: "",
         });
-        // Use setMessage to update message
+  
         setMessage(response.data.message);
       }
     } catch (error) {
@@ -50,7 +50,7 @@ const SignUp = () => {
         email: "",
         password: "",
       });
-      // Handle error, like showing an error message
+      
     }
   };
 
@@ -95,7 +95,7 @@ const SignUp = () => {
           />
         </div>
         <div>
-          {/* Display the message state */}
+          
           {message}
         </div>
         <br></br>

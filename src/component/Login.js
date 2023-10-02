@@ -38,7 +38,7 @@ const Login = ({ onLogin }) => {
 
     } catch (error) {
       console.error('Error sending data:', error);
-      // Handle error, like showing an error message
+    
     }
   };
 
