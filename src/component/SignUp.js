@@ -63,6 +63,7 @@ const SignUp = () => {
           <input
             className="inputform"
             type="text"
+            autoComplete="off"
             value={user.name}
             onChange={handleInputs}
             name="name"
@@ -74,6 +75,7 @@ const SignUp = () => {
           <input
             className="inputform"
             type="text"
+            autoComplete="off"
             value={user.password}
             onChange={handleInputs}
             name="password"
@@ -85,6 +87,7 @@ const SignUp = () => {
           <input
             className="inputform"
             type="text"
+            autoComplete="off"
             value={user.email}
             onChange={handleInputs}
             name="email"

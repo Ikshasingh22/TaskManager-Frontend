@@ -11,7 +11,7 @@ const Home=()=>{
          <NavLink className="texts" to="/signup"> SignUp</NavLink>
          </div>
          <div className="title">
-                 <div className="task">TaskManager
+                 <div className="logo">Task Manager
                     </div>
         </div>
         </>

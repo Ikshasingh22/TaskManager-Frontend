@@ -23,7 +23,7 @@ const MyTasks=()=>{
           },
         });
   
-        // Assuming the API returns an array of tasks, you can set them in the state
+        // returning array of tasks
         setTasks(response.data.tasks);
       } catch (error) {
         console.error("Error fetching tasks:", error);
@@ -31,7 +31,7 @@ const MyTasks=()=>{
     };
   
     useEffect(() => {
-      fetchTasks(); // Fetch tasks when the component mounts
+      fetchTasks(); 
     }, [authToken]);
     const handleDeleteTask = async (taskId) => {
       try {
@@ -53,13 +53,15 @@ const MyTasks=()=>{
     return (
       <>
        <div className="mytasks-nav">
-                  Your Tasks
+               <div className="tasks-nav">
+                     Your Tasks
+               </div>
        </div>
 
        <div className="task-cards">
         {tasks.map((task) => (
             <div key={task.taskId} className="task-card">
-            <h3>Task Name: {task.taskName}</h3>
+            <h5>Task Name: {task.taskName}</h5>
             <p>Task Id: {task.taskId}</p>
             <div className="button-container">
             <NavLink  to={`/taskview?taskId=${task.taskId}`}  className="button">

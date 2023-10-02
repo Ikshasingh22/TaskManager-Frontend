@@ -30,7 +30,7 @@ const User_Home=()=>{
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/user/task/addtask', task,{
+      const response = await axios.post('https://taskmanagerbackend-py44.onrender.com/user/task/addtask', task,{
         headers: {
           Authorization: `Bearer ${authToken}`,
         },

@@ -51,9 +51,12 @@ const TaskView = () => {
           },
         }
       );
+      if(response.data.success===true){
       // Assuming the server responds with the updated task data
       setTask(response.data.updatedTask);
       setEditMode(false);
+
+      }
     } catch (error) {
       console.error("Error updating task:", error);
     }
@@ -95,7 +98,7 @@ const TaskView = () => {
           )}
         </>
       ) : (
-        <p>Loading...</p>
+        <p>Task Updated</p>
       )}
     </div>
   );

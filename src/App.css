@@ -37,17 +37,16 @@
   }
 }
 .nav{
-  height: 100px;
+  height: 72px;
   width: 1532px;
-  background-color: aquamarine;
+  background-color: rgb(112, 194, 213);
   text-align: right;
 }
 .texts{
   display: inline;
   margin-right: 15px;
   font-size: 21px;
-  
- 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .title {
   display: flex;
@@ -61,9 +60,10 @@
   margin-right: 100px;
 }
 
-.task {
-  margin-bottom: 100px;
-  font-size: 25px;
+.logo{
+  margin-bottom: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
 }
 .profile{
   width: 1400x;
@@ -149,18 +149,23 @@
 .user-nav-bar{
   background-color: antiquewhite;
   height: 50px;
-  width: 1500px;
+  width: 100%; 
   display: flex; /* Use flexbox to control alignment */
   justify-content: flex-end;
 }
 .nav-link{
  margin-left: 10px;
+ margin-right: 5px;
   font-size: 16px;
 }
 .mytasks-nav{
-   height: 100px;
-   width: 1000px;
-   background-color: aqua;
+   height: 75px;
+   width: 100%; 
+   background-color: rgb(144, 192, 192);
+}
+.tasks-nav{
+  font-size: 25px;
+  text-align: center;
 }
 .button-container {
   display: flex; /* Use flexbox to align buttons in a row */

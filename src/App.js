@@ -7,6 +7,7 @@ import Login from "./component/Login";
 import SignUp from "./component/SignUp";
 import MyTasks from "./component/MyTasks";
 import TaskView from "./component/TaskView";
+import LogOut from "./component/LogOut";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = (isLoggedIn) => {
@@ -22,6 +23,8 @@ function App() {
         <Route path="/userhome" element={<User_Home />} />
         <Route path="/mytasks" element={<MyTasks />} />
         <Route path="/taskview" element={<TaskView />} />
+        <Route path="/logout" element={<LogOut  setUserState={setIsLoggedIn} />} />
+
       </>
     ) : (
     <>
